@@ -1,0 +1,174 @@
+$main-color: #380104;//#380104
+$main-color-2: lighten(saturate(adjust-hue($main-color, -357), 3.51), 31.37); //#d90000
+$main-color-3: lighten(saturate(adjust-hue($main-color, -357), 3.51), 21.37); //#a60000
+$main-color-4: lighten(saturate(adjust-hue($main-color, -357), 3.51), 11.96); //#760000
+$main-color-5: lighten(desaturate(adjust-hue($main-color, -357), 1.20), 22.16); //#a60404
+$main-color-6: lighten(desaturate(adjust-hue($main-color, -357), 4.59), 37.25); //#ed0a0a
+$main-color-7: lighten(saturate(adjust-hue($main-color, -357), 1.64), 9.80); //#6a0101
+$main-color-8: lighten(desaturate(adjust-hue($main-color, -357), 7.95), 26.47); //#b50b0b
+$main-color-9: lighten(adjust-hue($main-color, -357), 11.18); //#700202
+$main-color-10: lighten(saturate(adjust-hue($main-color, -357), 3.51), 3.73); //#4c0000
+$main-color-11: lighten(desaturate(adjust-hue($main-color, -356), 7.36), 6.86); //#570605
+$main-color-12: darken(saturate(adjust-hue($main-color, -6), 3.51), 6.08); //#1a0004 saya amenamugy
+$main-color-13: darken(desaturate(adjust-hue($main-color, -2), 1.62), 3.53); //#260104
+$main-color-14: lighten(desaturate(adjust-hue($main-color, 2), 8.43), 1.96); //#3f0405
+$main-color-15: lighten(saturate(adjust-hue($main-color, -356), 3.51), 16.27); //#8c0200
+$main-color-16:darken(desaturate(adjust-hue(#380104, -357), 96.49), 11.18);//#000000
+$main-color-17:lighten(desaturate(adjust-hue(#380104, -357), 96.49), 88.82);//ffffff
+$main-color-18:lighten(saturate(adjust-hue(#380104, 2), 3.51), 18.82);//#990002
+$main-color-19: lighten(desaturate(adjust-hue(#380104, -357), 67.27), 41.18);//#a96262
+
+
+@if(lightness($main-color)>50%) {
+  $main-color-2: darken(saturate(adjust-hue($main-color, 357), 3.51), 31.37); //#d90000
+  $main-color-3: darken(saturate(adjust-hue($main-color, 357), 3.51), 21.37); //#a60000
+  $main-color-4: darken(saturate(adjust-hue($main-color, 357), 3.51), 11.96); //#760000
+  $main-color-5: darken(desaturate(adjust-hue($main-color, 357), 1.20), 22.16); //#a60404
+  $main-color-6: darken(desaturate(adjust-hue($main-color, -357), 4.59), 37.25); //#ed0a0a
+  $main-color-7: darken(saturate(adjust-hue($main-color, 357), 1.64), 9.80); //#6a0101
+  $main-color-8: darken(desaturate(adjust-hue($main-color, 357), 7.95), 26.47); //#b50b0b
+  $main-color-9: darken(adjust-hue($main-color, 357), 11.18); //#700202
+  $main-color-10: darken(saturate(adjust-hue($main-color, 357), 3.51), 3.73); //#4c0000
+  $main-color-11: darken(desaturate(adjust-hue($main-color, -356), 7.36), 6.86); //#570605
+  $main-color-12: lighten(saturate(adjust-hue($main-color, 6), 3.51), 6.08); //#1a0004 saya amenamugy
+  $main-color-13: lighten(desaturate(adjust-hue($main-color, 2), 1.62), 3.53); //#260104
+  $main-color-14: darken(desaturate(adjust-hue($main-color, -2), 8.43), 1.96); //#3f0405
+  $main-color-15: darken(saturate(adjust-hue($main-color, 356), 3.51), 16.27); //#8c0200
+  $main-color-16:lighten(desaturate(adjust-hue(#380104, -357), 96.49), 11.18);//#000000
+  $main-color-17:darken(desaturate(adjust-hue(#380104, -357), 96.49), 88.82);//ffffff
+  $main-color-18:darken(saturate(adjust-hue(#380104, 2), 3.51), 18.82);//#990002
+  $main-color-19: lighten(desaturate(adjust-hue(#380104, -357), 67.27), 41.18);//#a96262
+}
+
+
+$brand-color: #eab504; //#eab504
+$brand-color-2: lighten(desaturate(adjust-hue($brand-color, 8), 0.89), 34.90); //#fdf4a3
+$brand-color-3: lighten(desaturate($brand-color, 15.16), 42.75); //#faf0ce
+$brand-color-4: darken(desaturate(adjust-hue($brand-color, -8), 48.73), 4.51); //#9f7938
+$brand-color-5: lighten(desaturate(adjust-hue($brand-color, -9), 36.64), 28.82); //#e6ca9b
+$brand-color-6: darken(desaturate(adjust-hue($brand-color, -10), 44.26), 9.61); //#90682d saya amenamugy
+$brand-color-7:lighten(desaturate(adjust-hue(#eab504, -5), 23.39), 22.55);//#eac677
+$brand-color-8:lighten(desaturate(adjust-hue(#eab504, -1), 13.31), 6.27);//#ebbb23
+
+@if(lightness($brand-color)>50%) {
+   $brand-color-2: darken(desaturate(adjust-hue($brand-color, -8), 0.89), 34.90); //#fdf4a3
+   $brand-color-3: darken(desaturate($brand-color, 15.16), 42.75); //#faf0ce
+   $brand-color-4: lighten(desaturate(adjust-hue($brand-color, 8), 48.73), 4.51); //#9f7938
+   $brand-color-5: darken(desaturate(adjust-hue($brand-color, 9), 36.64), 28.82); //#e6ca9b
+   $brand-color-6: lighten(desaturate(adjust-hue($brand-color, 10), 44.26), 9.61); //#90682d saya amenamugy
+   $brand-color-7:lighten(desaturate(adjust-hue(#eab504, -5), 23.39), 22.55);//#eac677
+   $brand-color-8:darken(desaturate(adjust-hue(#eab504, -1), 13.31), 6.27);//#ebbb23
+
+}
+
+
+$hero-color: #8d8888; //#8d8888
+$hero-color-2: lighten(desaturate($hero-color, 2.15), 28.82);//#d4d4d4
+$hero-color-3: lighten(desaturate($hero-color, 2.15), 14.31); //#afafaf
+
+@if(lightness($hero-color)>80%){
+  $hero-color-2: darken(desaturate($hero-color, 2.15), 28.82);//#d4d4d4
+  $hero-color-3: darken(desaturate($hero-color, 2.15), 14.31); //#afafaf
+}
+
+
+$text-color:#ffffff;
+$brand-text-color:#ffffff;
+$brand-text-color-2:darken(saturate(adjust-hue($brand-text-color, 34), 75.00), 89.02);//#311f07
+$brand-text-color-3:darken(saturate($brand-text-color, 100.00), 80.20);//#650000
+$hero-text-color:#ffffff;
+
+@if(lightness($main-color)>50%){
+  $text-color:#000000;
+}
+@if(lightness($brand-color)>50%){
+  $brand-text-color-2:lighten(saturate(adjust-hue($brand-text-color, 34), 75.00), 89.02);//#311f07
+  $brand-text-color-3:lighten(saturate($brand-text-color, 100.00), 80.20);//#650000
+}
+@if(lightness($hero-color)>50%){
+  $hero-text-color: $brand-text-color-3;
+}
+
+$main-color-1-rgb: red($main-color), green($main-color), blue($main-color);
+$main-color-2-rgb: red($main-color-2), green($main-color-2), blue($main-color-2);
+$main-color-3-rgb: red($main-color-3), green($main-color-3), blue($main-color-3);
+$main-color-4-rgb: red($main-color-4), green($main-color-4), blue($main-color-4);
+$main-color-5-rgb: red($main-color-5), green($main-color-5), blue($main-color-5);
+$main-color-6-rgb: red($main-color-6), green($main-color-6), blue($main-color-6);
+$main-color-7-rgb: red($main-color-7), green($main-color-7), blue($main-color-7);
+$main-color-8-rgb: red($main-color-8), green($main-color-8), blue($main-color-8);
+$main-color-9-rgb: red($main-color-9), green($main-color-9), blue($main-color-9);
+$main-color-10-rgb: red($main-color-10), green($main-color-10), blue($main-color-10);
+$main-color-11-rgb: red($main-color-11), green($main-color-11), blue($main-color-11);
+$main-color-12-rgb: red($main-color-12), green($main-color-12), blue($main-color-12);
+$main-color-13-rgb: red($main-color-13), green($main-color-13), blue($main-color-13);
+$main-color-14-rgb: red($main-color-14), green($main-color-14), blue($main-color-14);
+$main-color-15-rgb: red($main-color-15), green($main-color-15), blue($main-color-15);
+$main-color-16-rgb: red($main-color-16), green($main-color-16), blue($main-color-16);
+$main-color-17-rgb: red($main-color-17), green($main-color-17), blue($main-color-17);
+$main-color-18-rgb: red($main-color-18), green($main-color-18), blue($main-color-18);
+$main-color-19-rgb: red($main-color-19), green($main-color-19), blue($main-color-19);
+
+
+$brand-color-1-rgb: red($brand-color), green($brand-color), blue($brand-color);
+$brand-color-2-rgb: red($brand-color-2), green($brand-color-2), blue($brand-color-2);
+$brand-color-3-rgb: red($brand-color-3), green($brand-color-3), blue($brand-color-3);
+$brand-color-4-rgb: red($brand-color-4), green($brand-color-4), blue($brand-color-4);
+$brand-color-5-rgb: red($brand-color-5), green($brand-color-5), blue($brand-color-5);
+$brand-color-6-rgb: red($brand-color-6), green($brand-color-6), blue($brand-color-6);
+$brand-color-7-rgb: red($brand-color-7), green($brand-color-7), blue($brand-color-7);
+$brand-color-8-rgb: red($brand-color-8), green($brand-color-8), blue($brand-color-8);
+
+
+$hero-color-1-rgb: red($hero-color), green($hero-color), blue($hero-color);
+$hero-color-2-rgb: red($hero-color-2), green($hero-color-2), blue($hero-color-2);
+$hero-color-3-rgb: red($hero-color-3), green($hero-color-3), blue($hero-color-3);
+
+$text-color-1-rgb: red($text-color), green($text-color), blue($text-color);
+$brand-text-color-1-rgb: red($brand-text-color), green($brand-text-color), blue($brand-text-color);
+$brand-text-color-2-rgb: red($brand-text-color-2), green($brand-text-color-2), blue($brand-text-color-2);
+$brand-text-color-3-rgb: red($brand-text-color-3), green($brand-text-color-3), blue($brand-text-color-3);
+$hero-text-color-1-rgb: red($hero-text-color), green($hero-text-color), blue($hero-text-color);
+
+:root {
+  --main-color: #{$main-color-1-rgb};
+  --main-color-2: #{$main-color-2-rgb};
+  --main-color-3: #{$main-color-3-rgb};
+  --main-color-4: #{$main-color-4-rgb};
+  --main-color-5: #{$main-color-5-rgb};
+  --main-color-6: #{$main-color-6-rgb};
+  --main-color-7: #{$main-color-7-rgb};
+  --main-color-8: #{$main-color-8-rgb};
+  --main-color-9: #{$main-color-9-rgb};
+  --main-color-10: #{$main-color-10-rgb};
+  --main-color-11: #{$main-color-11-rgb};
+  --main-color-12: #{$main-color-12-rgb};
+  --main-color-13: #{$main-color-13-rgb};
+  --main-color-14: #{$main-color-14-rgb};
+  --main-color-15: #{$main-color-15-rgb};
+  --main-color-16: #{$main-color-16-rgb};
+  --main-color-17: #{$main-color-17-rgb};
+  --main-color-18: #{$main-color-18-rgb};
+  --main-color-19: #{$main-color-19-rgb};
+
+
+  --brand-color: #{$brand-color-1-rgb};
+  --brand-color-2: #{$brand-color-2-rgb};
+  --brand-color-3: #{$brand-color-3-rgb};
+  --brand-color-4: #{$brand-color-4-rgb};
+  --brand-color-5: #{$brand-color-5-rgb};
+  --brand-color-6: #{$brand-color-6-rgb};
+  --brand-color-7: #{$brand-color-7-rgb};
+  --brand-color-8: #{$brand-color-8-rgb};
+
+
+  --hero-color: #{$hero-color-1-rgb};
+  --hero-color-2: #{$hero-color-2-rgb};
+  --hero-color-3: #{$hero-color-3-rgb};
+
+  --text-color: #{$text-color-1-rgb};
+  --brand-text-color:#{$brand-text-color-1-rgb};
+  --brand-text-color-2:#{$brand-text-color-2-rgb};
+  --brand-text-color-3:#{$brand-text-color-3-rgb};
+  --hero-text-color:#{$hero-text-color-1-rgb};
+}

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Live game">
+    <meta name="keywords" content="game,nardi,football,casino">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+<div class="content-holder">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo-other.png" alt="logo" class="logo-img"/>
+                    <span class="side-text">text</span>
+                </a>
+<!--                <div class="info-and-login">-->
+<!--                    <input type="radio" id="info-btn-open" name="header-info-btn"/>-->
+<!--                    <input type="radio" id="info-btn-close" name="header-info-btn"/>-->
+<!--                    <input type="radio" id="login-btn-open" name="header-login-btn"/>-->
+<!--                    <input type="radio" id="login-btn-close" name="header-login-btn"/>-->
+<!--                    <button type="button" class="info-btn-open-holder">-->
+<!--                        <label for="info-btn-open" class="icon-holder">-->
+<!--                            <i class="ui-lib-info ui-icons info-icon"></i>-->
+<!--                            <span class="side-text">text</span>-->
+<!--                        </label>-->
+<!--                    </button>-->
+<!--                    <div class="navbar-mobile-holder">-->
+<!--                        <button type="button" class="info-btn-close-holder">-->
+<!--                            <label for="info-btn-close">-->
+<!--                                <i class="ui-lib-cross popup-close-icon"></i>-->
+<!--                                <span class="side-text">text</span>-->
+<!--                            </label>-->
+<!--                        </button>-->
+<!--                        <div class="navbar-mobile">-->
+<!--                            <div class="info-links time-and-location">-->
+<!--                                <div class="time-and-location-inner">-->
+<!--                                    <time datetime="10:34" class="time">-->
+<!--                                        <i class="ui-lib-clock watch"></i>-->
+<!--                                        10:34-->
+<!--                                    </time>-->
+<!--                                    <span class="location">GMT+4</span>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="info-links language-block">-->
+<!--                                &lt;!&ndash;                    <select name="language" id="language" class="dropdown-options">&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="EN">&ndash;&gt;-->
+<!--                                &lt;!&ndash;                            EN&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        </option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="RU">RU</option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="AM">AM</option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    </select>&ndash;&gt;-->
+
+<!--                                <div class="dropdown">-->
+<!--                                    &lt;!&ndash;                                                <div class="dropdown-item-holder">&ndash;&gt;-->
+<!--                                    <input type="checkbox" id="open-mobile"/>-->
+<!--                                    <label for="open-mobile" class="dropdown-item-holder">-->
+<!--                                        <p class="dropdown-item" href="#"><span-->
+<!--                                                class="flag-icon flag-icon-us me-1"></span> <span class="lang">EN</span>-->
+<!--                                        </p>-->
+<!--                                        <i class="ui-lib-chevron-down-1-converted down-arrow"></i>-->
+<!--                                    </label>-->
+<!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="dropdown-item-holder active">-->
+<!--                                            <a class="dropdown-item" href="#"><span-->
+<!--                                                    class="flag-icon flag-icon-us me-1"></span> <span-->
+<!--                                                    class="lang">EN</span></a>-->
+<!--                                        </li>-->
+<!--                                        <li class="dropdown-item-holder">-->
+<!--                                            <a class="dropdown-item" href="#"><span-->
+<!--                                                    class="flag-icon flag-icon-fr me-1"></span>-->
+<!--                                                <span class="lang">FR</span></a>-->
+<!--                                        </li>-->
+<!--                                        <li class="dropdown-item-holder">-->
+<!--                                            <a class="dropdown-item" href="#"><span-->
+<!--                                                    class="flag-icon flag-icon-sp me-1"></span>-->
+<!--                                                <span class="lang">SP</span></a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="info-links live-support">-->
+<!--                                <i class="ui-lib-bubble comment"></i>-->
+<!--                                <span class="support">Live Support</span>-->
+<!--                            </div>-->
+<!--                            <div class="info-links odds-in">-->
+<!--                                <span class="odds">Odds in:</span>-->
+<!--                                &lt;!&ndash;                    <select name="language" id="odds" class="dropdown-options">&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="EN" selected>Decimal</option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="RU">Fraction</option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                        <option value="AM">American</option>&ndash;&gt;-->
+<!--                                &lt;!&ndash;                    </select>&ndash;&gt;-->
+<!--                                <div class="dropdown">-->
+<!--                                    &lt;!&ndash;                                                <div class="dropdown-item-holder">&ndash;&gt;-->
+<!--                                    <input type="checkbox" id="open-drp-mobile"/>-->
+<!--                                    <label for="open-drp-mobile" class="dropdown-item-holder">-->
+<!--                                        <p class="dropdown-item" href="#">-->
+<!--                                            <span class="lang">Decimal</span></p>-->
+<!--                                        <i class="ui-lib-chevron-down-1-converted down-arrow"></i>-->
+<!--                                    </label>-->
+<!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
+<!--                                    <ul class="dropdown-menu">-->
+<!--                                        <li class="dropdown-item-holder">-->
+<!--                                            <a class="dropdown-item" href="#"> <span class="lang">American</span></a>-->
+<!--                                        </li>-->
+<!--                                        <li class="dropdown-item-holder active">-->
+<!--                                            <a class="dropdown-item" href="#">-->
+<!--                                                <span class="lang">Decimal</span></a>-->
+<!--                                        </li>-->
+<!--                                        <li class="dropdown-item-holder">-->
+<!--                                            <a class="dropdown-item" href="#">-->
+<!--                                                <span class="lang">Fraction</span></a>-->
+<!--                                        </li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+<!--                            <div class="info-links mobile">-->
+<!--                                <div class="mobile-inner"> Mobile </div>-->
+<!--                            </div>-->
+<!--                            <div class="info-links betshop">-->
+<!--                               <div class="betshop-inner"> BetShop</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <button type="button" class="login-btn-open-holder">-->
+<!--                        <label for="login-btn-open" class="icon-holder">-->
+<!--                            <i class="ui-lib-enter ui-icons login-icon"></i>-->
+<!--                            <span class="side-text">text</span>-->
+<!--                        </label>-->
+<!--                    </button>-->
+<!--                    <div class="login-and-joinUs-mobile-holder">-->
+<!--                        <button type="button" class="login-btn-close-holder">-->
+<!--                            <label for="login-btn-close">-->
+<!--                                <i class="ui-lib-cross popup-close-icon"></i>-->
+<!--                                <span class="side-text">text</span>-->
+<!--                            </label>-->
+<!--                        </button>-->
+<!--                        <div class="login-and-joinUs-mobile">-->
+<!--                            <div class="username-and-pass">-->
+<!--                                <input type="text" name="username" placeholder="Username"-->
+<!--                                       class="login-fields username"/>-->
+<!--                                <input type="password" name="password" minlength="8" placeholder="Password"-->
+<!--                                       class="login-fields password" required/>-->
+<!--                                <button type="button" class="login-btn">-->
+<!--                                    Login-->
+<!--                                </button>-->
+<!--                            </div>-->
+<!--                            <div class="joinUs-and-lostPass">-->
+<!--                                <div class="join-us-holder">-->
+<!--                                    <button type="button" class="btn">-->
+<!--                                        <i class="ui-lib-chevron-down-1-converted join-us-icon"></i>-->
+<!--                                        <span class="join-us">Join us!</span>-->
+<!--                                    </button>-->
+<!--                                </div>-->
+<!--                                <div class="lost-password-holder">-->
+<!--                                    <a href="#" class="lost-password">Lost Password?</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <div class="navbar">
+                    <div class="info-links time-and-location">
+                        <div class="time-and-location-inner">
+                            <time datetime="10:34" class="time">
+                                <i class="ui-lib-clock watch"></i>
+                                10:34
+                            </time>
+                            <span class="location">GMT+4</span>
+                        </div>
+                    </div>
+                    <div class="info-links language-block">
+                        <!--                    <select name="language" id="language" class="dropdown-options">-->
+                        <!--                        <option value="EN">-->
+                        <!--                            EN-->
+                        <!--                        </option>-->
+                        <!--                        <option value="RU">RU</option>-->
+                        <!--                        <option value="AM">AM</option>-->
+                        <!--                    </select>-->
+
+                        <div class="dropdown">
+                            <!--                                                <div class="dropdown-item-holder">-->
+                            <input type="checkbox" id="open"/>
+                            <label for="open" class="dropdown-item-holder">
+                                <p class="dropdown-item" href="#"><span
+                                        class="flag-icon flag-icon-us me-1"></span> <span class="lang">EN</span></p>
+                                <i class="ui-lib-chevron-down-1-converted down-arrow"></i>
+                            </label>
+                            <!--                                                </div>-->
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item-holder active">
+                                    <a class="dropdown-item" href="#"><span
+                                            class="flag-icon flag-icon-us me-1"></span> <span class="lang">EN</span></a>
+                                </li>
+                                <li class="dropdown-item-holder">
+                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-fr me-1"></span>
+                                        <span class="lang">FR</span></a>
+                                </li>
+                                <li class="dropdown-item-holder">
+                                    <a class="dropdown-item" href="#"><span class="flag-icon flag-icon-sp me-1"></span>
+                                        <span class="lang">SP</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-links live-support">
+                        <div class="live-support-content">
+                            <i class="ui-lib-bubble comment"></i>
+                            <span class="support">Live Support</span>
+                        </div>
+                    </div>
+
+
+                    <div class="info-links odds-in">
+                        <span class="odds">Odds in:</span>
+                        <!--                    <select name="language" id="odds" class="dropdown-options">-->
+                        <!--                        <option value="EN" selected>Decimal</option>-->
+                        <!--                        <option value="RU">Fraction</option>-->
+                        <!--                        <option value="AM">American</option>-->
+                        <!--                    </select>-->
+                        <div class="dropdown">
+                            <!--                                                <div class="dropdown-item-holder">-->
+                            <input type="checkbox" id="open-drp"/>
+                            <label for="open-drp" class="dropdown-item-holder">
+                                <p class="dropdown-item" href="#">
+                                    <span class="lang">Decimal</span></p>
+                                <i class="ui-lib-chevron-down-1-converted down-arrow"></i>
+                            </label>
+                            <!--                                                </div>-->
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item-holder">
+                                    <a class="dropdown-item" href="#"> <span class="lang">American</span></a>
+                                </li>
+                                <li class="dropdown-item-holder active">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="lang">Decimal</span></a>
+                                </li>
+                                <li class="dropdown-item-holder">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="lang">Fraction</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="info-links mobile">
+                        <div class="mobile-inner"> Mobile </div>
+                    </div>
+                    <div class="info-links betshop">
+                        <div class="betshop-inner"> BetShop</div>
+                    </div>
+                </div>
+                <div class="login-and-joinUs">
+                    <div class="username-and-pass">
+                        <input type="text" name="username" placeholder="Username" class="username"/>
+                        <input type="password" name="password" minlength="8" placeholder="Password" class="password"
+                               required/>
+                        <button type="button" class="login-btn">
+                            Login
+                        </button>
+                    </div>
+                    <div class="joinUs-and-lostPass">
+                        <div class="join-us-holder">
+                            <button type="button" class="btn">
+                                <span class="ui-lib-chevron-right-converted-1 join-us-icon"></span>
+                                <span class="join-us">Join us!</span>
+                            </button>
+                        </div>
+                        <div class="lost-password-holder">
+                            <a href="#" class="lost-password">Lost Password?</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="menu-nav">
+        <div class="wrapper">
+            <div class="menu-nav-inner">
+                <input type="radio" id="nav-btn-open" name="nav-menu-popup">
+                <input type="radio" id="nav-btn-close" name="nav-menu-popup" checked/>
+
+
+                <!--            <ul class="nam-menu-web">-->
+                <!--                <li class="f active">-->
+                <!--                    <a href="#">-->
+                <!--                        SPORT-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <!--                <li class="s">-->
+                <!--                    <a href="#">-->
+                <!--                        LIVE-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <!--                <li class="th">-->
+                <!--                    <a href="#">-->
+                <!--                        CASINO-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <!--                <li class="fo">-->
+                <!--                    <a href="#">-->
+                <!--                        POKER-->
+                <!--                    </a>-->
+                <!--                </li>-->
+                <!--            </ul>-->
+
+                <div class="nav-menu-web">
+                    <button type="button" class="nav-menu-btn">
+                        <input type="radio" id="btn-poker" name="nav-button"/>
+                        <label for="btn-poker" class="btn-content">
+                            <i class="ui-lib-chevron-right-converted-1 nav-btn-icon"></i>
+                            <span class="btn-text">POKER</span>
+                        </label>
+                    </button>
+                    <button type="button" class="nav-menu-btn">
+                        <input type="radio" id="btn-casino" name="nav-button"/>
+                        <label for="btn-casino" class="btn-content">
+                            <i class="ui-lib-chevron-right-converted-1 nav-btn-icon"></i>
+                            <span class="btn-text">CASINO</span>
+                        </label>
+                    </button>
+                    <button type="button" class="nav-menu-btn">
+                        <input type="radio" id="btn-live" name="nav-button" checked/>
+                        <label for="btn-live" class="btn-content">
+                            <i class="ui-lib-chevron-right-converted-1 nav-btn-icon"></i>
+                            <span class="btn-text">LIVE</span>
+                        </label>
+                    </button>
+                    <button type="button" class="nav-menu-btn">
+                        <input type="radio" id="btn-sport" name="nav-button"/>
+                        <label for="btn-sport" class="btn-content">
+                            <i class="ui-lib-chevron-right-converted-1 nav-btn-icon"></i>
+                            <span class="btn-text">SPORT</span>
+                        </label>
+                    </button>
+                </div>
+
+                <button type="button" class="nav-btn-open-holder">
+                    <label for="nav-btn-open" class="nav-btn-open-holder-inner">
+                        <i class="ui-lib-menu nav-menu-icon"></i>
+                        <span class="side-text">text</span>
+                    </label>
+                </button>
+                <div class="nav-menu-mobile-holder">
+                    <button type="button" class="nav-btn-close-holder">
+                        <label for="nav-btn-close">
+                            <i class="ui-lib-cross popup-close-icon"></i>
+                            <span class="side-text">text</span>
+                        </label>
+                    </button>
+                    <ul class="nav-menu-mobile">
+                        <li class="active">
+                            <a href="#">
+                                SPORT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                LIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CASINO
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                POKER
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="banner-inner">
+                <img src="assets/images/main-banner.png" class="main-banner"/>
+            </div>
+            <div class="games-holder">
+                <a href="#" class="game">
+                    <span class="game-title">FOOTBALL</span>
+                    <img src="assets/images/backgammon.png" alt="football-image" class="game-image"/>
+                    <div class="game-poster">
+                        <p class="chemp-ligue">Football.Europe - Champions League</p>
+                        <p class="play-teams">FC Zenit ST. Petersburg : FK Austria Vienna </p>
+                    </div>
+                </a>
+                <a href="#" class="game">
+                    <span class="game-title">NARDI</span>
+                    <img src="assets/images/backgammon.png" alt="backgamon-image" class="game-image"/>
+                </a>
+                <a href="#" class="game">
+                    <span class="game-title">DOMINO</span>
+                    <img src="assets/images/domino.png" alt="domino-image" class="game-image"/>
+                </a>
+                <a href="#" class="game">
+                    <span class="game-title">TENNIS</span>
+                    <img src="assets/images/backgammon.png" alt="tenis-image" class="game-image"/>
+                    <div class="game-poster">
+                        <p class="chemp-ligue">Football.World - Fed Cup 2013. Winner</p>
+                        <p class="play-teams">Russia : Italy</p>
+                    </div>
+                </a>
+                <a href="#" class="game">
+                    <span class="game-title">POKER</span>
+                    <img src="assets/images/Poker.png" alt="poker-image" class="game-image"/>
+                </a>
+                <a href="#" class="game">
+                    <span class="game-title">CASINO</span>
+                    <img src="assets/images/casino.png" alt="casino-image" class="game-image"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="about-and-rules">
+            <div class="wrapper">
+                <div class="rules-inner">
+                    <div class="section">
+                        <h1 class="section-title">About Banyakmain</h1>
+                        <a href="#" class="info">About Company</a>
+                        <a href="#" class="info">Contacts</a>
+                    </div>
+                    <div class="section">
+                        <h1 class="section-title">Help</h1>
+                        <a href="#" class="info faq">FAQ</a>
+                        <a href="#" class="info">Types of bets</a>
+                        <a href="#" class="info">Why do I need to be registered?</a>
+                        <a href="#" class="info">Data protection</a>
+                        <a href="#" class="info">Delivery bt phone</a>
+                    </div>
+                    <div class="section">
+                        <h1 class="section-title">Statistics</h1>
+                        <a href="#" class="info">LIVE Results</a>
+                        <a href="#" class="info">LIVE MatchCenter</a>
+                        <a href="#" class="info">Tennis Live MatchCenter</a>
+                        <a href="#" class="info">Statistics</a>
+                        <a href="#" class="info">LIVE Calendar</a>
+                        <a href="#" class="info">Results</a>
+                    </div>
+                    <div class="section">
+                        <h1 class="section-title">GTC</h1>
+                        <a href="#" class="info">The Rules of holding the totalizer and accepting bets</a>
+                        <a href="#" class="info">Description of the ticket</a>
+                        <a href="#" class="info">Place terms and ways of winning payment</a>
+                        <a href="#" class="info">The organizers obligations and rights</a>
+                        <a href="#" class="info">The clients obligations and rights</a>
+                        <a href="#" class="info">The regulations cames info force</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment-methods">
+            <div class="wrapper">
+                <ul class="payment-methods-inner">
+                    <li class="img-holder">
+                        <img src="assets/images/ca.png" alt="cash"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/tl.png" alt="tellcell"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/mp.png" alt="megapay"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/td.png" alt="tandem"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/ed.png" alt="edram"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/ac.png" alt="arca"/>
+                    </li>
+                    <li class="img-holder">
+                        <img src="assets/images/op.png" alt="osmp"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            <span class="copyright">&copy;2003 - 2013 All rights reserved</span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
